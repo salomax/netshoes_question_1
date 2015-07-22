@@ -84,6 +84,7 @@
 			cepResource.get().$promise.then(
 	    			function(endereco) {
 	    				$scope.endereco = endereco;
+	    				$scope.mensagem = '';
 	    			}, function(error) {
 			    		console.log('Ocorreu um erro ao buscar o CEP: ' + error.data);
 			    		$scope.mensagem = error.data;
